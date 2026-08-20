@@ -1,0 +1,15 @@
+# User accounts (created at runtime, don't commit — contains password hashes)
+data/users.json
+app/users.json
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store

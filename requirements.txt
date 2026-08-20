@@ -1,0 +1,24 @@
+# Core app dependencies for Project FORESIGHT.
+# Trimmed from a full `pip freeze` dump down to what the code actually
+# imports (dashboard.py, auth_store.py, service/main.py, src/pipeline.py,
+# and the notebooks). The old file included 140+ unrelated packages
+# (Django, Flask-MySQLdb, mysqlclient, the full Jupyter stack, etc.) and
+# one Windows-only package (pywinpty) that fails to install on Linux
+# deployment hosts like Streamlit Community Cloud, Render, or HF Spaces.
+
+# Dashboard
+streamlit==1.61.1
+pandas==3.0.5
+numpy==2.5.2
+matplotlib==3.11.1
+
+# Auth (shared by dashboard.py and service/main.py)
+bcrypt==5.0.0
+
+# Scoring API
+fastapi==0.141.1
+uvicorn==0.52.1
+pydantic==2.13.4
+
+# Forecasting model (used in notebooks/03_baseline.ipynb)
+lightgbm==4.7.0
