@@ -63,8 +63,9 @@ The model beats the baseline on an honest backtest. Full detail in `reports/eda_
 
 ## Live Links
 
-- Dashboard: _to be added_
-- Scoring API: _to be added_
+- Dashboard: https://foresight-sku-forecast.streamlit.app
+- Scoring API: https://foresight-demand-inventory-yawt.onrender.com
+- API docs (Swagger UI): https://foresight-demand-inventory-yawt.onrender.com/docs
 
 ## Repository Structure
 
